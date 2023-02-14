@@ -135,7 +135,7 @@ class Detector(object):
         '''
         probabilities = self.get_probabilities()
         if probabilities:
-            return probabilities[0].lang
+            return probabilities[0:5]
         return self.UNKNOWN_LANG
 
     def get_probabilities(self):
